@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms demo</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="Udemy.html">
+        <p>
+        <div><label for="username">enter your username:</label>
+            <input id="username" type="text" placeholder="Name" name="username">
+        </div>
+        </p>
+        <p></p><label for="password">enter your password:</label>
+        <input id="password" type="password" placeholder="password" name="password"></p>
+        <p><input type="color" placeholder="choose a color"></p>
+        <p><input type="date" placeholder="date"></p>
+        <p><input type="month" placeholder="month"></p>
+        <p><input type="number" placeholder="choose a number" min="1" max="1000"></p>
+        <p><input type="file"></p>
+        <p><input type="time"></p>
+        <p><input type="button"></p>
+        <p><button type="button">this button is just for fun!</button></p>
+        <p><button>submit</button></p>
+        <p><input type="submit" value="click me!"></p>
+    </form>
+    <p><button>not inside the form</button></p>
+
+    <h2>hijacking searches</h2>
+    <form action="https://reddit.com/search">
+        <label for="search">>>enter your search here:</label>
+        <input id="search" type="text" name="q">
+        <button>search reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <label for="search">>>enter your search here:</label>
+        <input id="search" type="text" name="q">
+        <button>search google</button>
+    </form>
+    <form action="https://youtube.com/results">
+        <label for="search">>>enter your search here:</label>
+        <input id="search" type="text" name="search_query">
+        <button>search youtube</button>
+    </form>
+    <form action="https://instagram.com/">
+        <input id="agree" type="checkbox" checked>
+        <label for="agree">terms of services</label>
+        <button>all done! lets go~</button>
+    </form>
+    <h3>more inputs</h3>
+    <form action="Udemy.html">
+        <label for="agreed">i agree to everythying</label>
+        <input id="agreed" type="checkbox">
+        <button>submit</button>
+    </form>
+    <form action="Udemy.html">
+        <label for="cheese">Amount of cheese:</label>
+        <input type="range" id="cheese" min="0" max="600" step="6" value="515" name="cheese level"><br>
+        <label for="req">Any special requests?</label><br>
+        <textarea id="req" rows="6" cols="50" name="requests"
+            placeholder="I want a website dude, not a form!."></textarea><br>
+        <button>submit</button>
+    </form>
+    <p><form action="Udemy.html">
+        <input type="url" name="url" placeholder="Enter a valid url here">
+        <button>url submit</button>
+    </form></p>
+
+
+
+</body>
+
+</html>
